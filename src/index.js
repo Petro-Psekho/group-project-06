@@ -8,3 +8,4 @@ import './js/slider-reviews';
 // new WOW().init();
 
 import './js/modal-buynow';
+import './js/mobile-menu';
