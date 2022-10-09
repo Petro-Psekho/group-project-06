@@ -1,7 +1,8 @@
 .customer-reviews {
   background-repeat: no-repeat;
   background-position: center;
-  @media screen and (max-width: 320px) {
+  background-size: cover;
+  @media screen and (max-width: $mobile) {
     padding-top: 80px;
     padding-bottom: 394px;
     background-image: url("../images/customer-reviews/reviews-bg-mobile-1x.png");
@@ -12,9 +13,9 @@
       background-image: url("../images/customer-reviews/reviews-bg-mobile-2x.png");
     }
   }
-  @media screen and (min-width: 321px) and (max-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 384px;
+  @media screen and (min-width: $mobile) and (max-width: $desktop) {
+    padding-top: 223px;
+    padding-bottom: 383px;
     background-image: url("../images/customer-reviews/reviews-bg-tablet-1x.png");
     @media screen and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -23,7 +24,7 @@
       background-image: url("../images/customer-reviews/reviews-bg-tablet-2x.png");
     }
   }
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 452px;
     padding-bottom: 207px;
     background-image: url("../images/customer-reviews/reviews-bg-desktop-1x.png");
@@ -35,7 +36,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1920px) {
     padding-top: 452px;
     padding-bottom: 207px;
     background-image: url("../images/customer-reviews/reviews-bg-1920px-1x.png");
@@ -47,27 +48,20 @@
     }
   }
 }
-.swiper-wrapper {
-  @media screen and (max-width: $tablet) {
-  }
+.swiper .swiper-wrapper {
+  padding-bottom: 32px;
 }
 
 .swiper .customer-reviews__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  cursor: pointer;
   @media screen and (max-width: $tablet) {
-    max-width: 305px;
-    margin-bottom: 8px;
+    padding-bottom: 14px;
   }
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    max-width: 705px;
-    margin-bottom: 22px;
-  }
-  @media screen and (min-width: $desktop) {
-    max-width: 968px;
-    margin-bottom: 22px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 32px;
   }
 }
 
@@ -80,58 +74,55 @@
   text-align: center;
   color: $secondary-text-color;
   background-color: $bg-color;
-  font-family: "Montserrat", sans-serif;
-  border-radius: 10px;
+  border-radius: 24px;
   @media screen and (max-width: $tablet) {
-    @include font(400, 13, 31);
+    @include font(400, 12, 31);
     max-width: 280px;
     padding: 34px 39px;
+    margin-top: 32px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    @include font(400, 14, 26);
-    letter-spacing: 0.04em;
+    @include font(500, 14, 26);
     max-width: 705px;
-    padding: 28px 80px;
+    padding: 30px 80px;
+    margin-top: 28px;
+    margin-bottom: 32px;
   }
   @media screen and (min-width: $desktop) {
-    @include font(400, 17, 30);
-    letter-spacing: 0.04em;
+    @include font(500, 16, 30);
     max-width: 968px;
     padding: 39px 74px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
 .swiper .customer-reviews__text-item {
-  font-family: "Montserrat", sans-serif;
   text-align: center;
   text-transform: capitalize;
   color: $primary-text-color;
-  margin-bottom: 30px;
   @media screen and (max-width: $tablet) {
     @include font(500, 20, 37);
   }
 
   @media screen and (min-width: $tablet) {
     @include font(500, 16, 30);
-    margin-bottom: 32px;
   }
 }
 
 /* // Slider */
 
-.swiper-pagination {
-  @media screen and (max-width: $tablet) {
-    margin-top: 14px;
-  }
-  @media screen and (min-width: $tablet) {
-  }
+.swiper .swiper-pagination {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
 }
 
 .swiper .swiper-pagination-bullet {
-  cursor: pointer;
   width: 12px;
   height: 12px;
-  background-color: #d9d9d9;
+  background-color: $bg-secondary-color;
 }
 
 .swiper .swiper-pagination-bullet-active {
