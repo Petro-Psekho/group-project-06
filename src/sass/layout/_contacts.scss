@@ -1,37 +1,413 @@
-.contacts {
+@media screen and (max-width: 767px) {
+  .contacts {
+      background-color: $bg-color;
+        
+    .contacts-container {
+      position: relative;
+    }  
+    .contacts-list {
+      // width: 280px;
+      // height: 412px;
+      display: block;
+
+      position: absolute;
+          
+        // transform: translateY(-120px);
   
-  background-color: aqua;
-  &__title {
-  }
-.contacts-list {
-  display: flex;
-  gap: 32px;
+      .contacts-list__item {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        padding: 32px;
 
-  .contacts-list__item {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+  
+        .contacts-list__item:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+  
+        .contacts-list__kategory {
+          width: 80px;
+          height: 16px;
+  
+          font-family: 'Montserrat';
+          @include font(500, 12px, 22px);
+          text-align: center;
+          letter-spacing: 0.04em;
+          color: #131313;
+          background: #F8D24E;
+          border-radius: 4px;
+        }
+  
+        .contacts-list__kategory_size {
+          width: 130px;
+          height: 16px;
+        }
+  
+        .contacts-adress {
+          font-family: 'Montserrat';
+          font-style: normal;
+          @include font(500, 12px, 22px);
+          color: $primary-text-color;
+        }
+  
+        .contacts-adress__text {
+          margin-bottom: 8px;
+          font-family: 'Montserrat';
+          @include font(500, 12px, 22px);
+          color: $primary-text-color;
+        }
+  
+        .contacts-adress__link {
+          font-family: 'Montserrat';
+          @include font(500, 12px, 22px);
+          color: Solid #D6936D;
+          text-decoration: underline;
+        }
+  
+        .contacts-time {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          justify-content: left;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          border-top: 1px solid #e1e1e1;
+          border-bottom: 1px solid #e1e1e1;
+  
+          .contacts-time__time {
+            font-family: 'Montserrat';
+            @include font(500, 12px, 22px);
+            color: #ABABAB;
+          }
+  
+          .contacts-time__day {
+            font-family: 'Montserrat';
+            @include font(500, 12px, 22px);
+            color: $primary-text-color;
+          }
+        }
+  
+        .contacts-social {
+          .contacts-social__link {
+            @include font(500, 12px, 22px);
+            color: #131313;
+          }
+        }
+      }
+    }
+  
+    .button-container {}
+  
+    .contacts-button {}
+
+}
+
+@media screen and (min-width: $tablet) {
+  .contacts {
+  
+      background-color: $bg-color;
+      &__title {
+      }
+  
+    .contacts-container {
+      position: relative;
+      height: 362px;
+    }
+  
+    .contacts-list {
+      position: absolute;
+      width: 704px;
+      // height: 528px;
+  
+      // top: 120px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+  
+      transform: translateY(-300px);
+  
+      .contacts-list__item {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+  
+        padding: 40px 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+  
+        flex-basis: calc((100% - 32px)/3);
+      }
+      .contacts-list__kategory {
+        width: 138px;
+        height: 28px;
+  
+        font-family: 'Montserrat';
+        @include font(500, 16px, 30px);
+  
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #131313;
+        background: #F8D24E;
+        border-radius: 6px;
+      }
+      .contacts-list__kategory_size {
+        width: 138px;
+        height: 28px;
+      }
+  
+      .contacts-adress {
+          font-family: 'Montserrat';
+          font-style: normal;
+            @include font(500, 14px, 26px);
+            color: $primary-text-color;
+            }
+  
+  
+      .contacts-adress__text {
+          margin-bottom: 8px;
+          font-family: 'Montserrat';
+          @include font(500, 14px, 26px);
+          color:$primary-text-color;
+        }
+  
+      .contacts-adress__link {
+          font-family: 'Montserrat';
+          @include font(500, 14px, 26px);
+          color: Solid #D6936D;
+          text-decoration: underline;
+        }
+  
+  
+      .contacts-time {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: left;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+  
+        .contacts-time__time {
+          font-family: 'Montserrat';
+          @include font(500, 14px, 26px);
+          color: #ABABAB;
+        }
+  
+        .contacts-time__day {
+          font-family: 'Montserrat';
+          @include font(500, 14px, 26px);
+          color:$primary-text-color;
+        }
+      }
+      .contacts-social {
+        .contacts-social__link {
+          @include font(500, 14px, 26px);
+          color:#131313;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .contacts {
+
+  .contacts-container {
+    position: relative;
+    height: 668px;
+  }
+
+  .contacts-list {
+    position: absolute;
+    width: 1168px;
+    // top: 120px;
+    gap: 32px;
+
+    transform: translateY(-120px);
+
+    .contacts-list__item {
+      gap: 32px;
+      padding: 40px;
+      
+      flex-basis: calc((100% - 64px)/3);
+    }
+    .contacts-list__kategory {
+      width: 75px;
+      height: 28px;
+    }
+
+    .contacts-list__kategory_size {
+      width: 138px;
+      height: 28px;
+    }
+
+    .contacts-adress {
+      @include font(500, 16px, 30px);
+    }
+
+    .contacts-adress__text {
+      @include font(500, 16px, 30px);
+    }
+
+    .contacts-adress__link {
+      font-family: 'Montserrat';
+      @include font(500, 16px, 30px);
+      color: Solid #D6936D;
+      text-decoration: underline;
+    }
+
+    .contacts-time {
+      
+      .contacts-time__time {
+        @include font(500, 16px, 30px);
+      }
+
+      .contacts-time__day {
+        @include font(500, 16px, 30px);
+      }
+    }
+    .contacts-social {
+
+      .contacts-social__link {
+        @include font(500, 16px, 30px);
+      }
+    }
+  }
+ }
+}
+
+
+// .contacts {
     
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+//   background-color: $bg-color;
+//   &__title {
+//   }
 
-    flex-basis: calc((100% - 64px)/3);
-  }
-  .contacts-list__text {
-    margin-bottom: 32px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    text-align: left;
-    letter-spacing: 0.04em;
-    color: #131313;
-    background: #F8D24E;
-    border-radius: 6px;
-    // min-width: 75px;
-  }
-}
+// .contacts-container {
+//   position: relative;
+//   height: 668px;
+// }
 
-}
+// .contacts-list {
+//   position: absolute;
+//   width: 1168px;
+//   height: 538px;
+  
+//   // top: 120px;
+  
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 32px;
+  
+//   transform: translateY(-120px);
+
+//   .contacts-list__item {
+    
+//     display: flex;
+//     flex-direction: column;
+//     gap: 32px;
+    
+//     padding: 40px;
+//     background: #FFFFFF;
+//     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+//     border-radius: 24px;
+
+//     flex-basis: calc((100% - 64px)/3);
+//   }
+//   .contacts-list__kategory {
+//     width: 75px;
+//     height: 28px;
+    
+//     font-family: 'Montserrat';
+//     @include font(500, 16px, 29px);
+    
+//     text-align: center;
+//     letter-spacing: 0.04em;
+//     color: #131313;
+//     background: #F8D24E;
+//     border-radius: 6px;
+//   }
+//   .contacts-list__kategory_size {
+//     width: 138px;
+//     height: 28px;
+//   }
+
+//   .contacts-adress {
+//       font-family: 'Montserrat';
+//       font-style: normal;
+//         @include font(500, 16px, 30px);
+//         color: $primary-text-color;
+//         }
+  
+    
+//   .contacts-adress__text {
+//       margin-bottom: 8px;
+//       font-family: 'Montserrat';
+//       @include font(500, 16px, 30px);
+//       color:$primary-text-color;
+//     }
+
+//   .contacts-adress__link {
+//       font-family: 'Montserrat';
+//       @include font(500, 16px, 30px);
+//       color: Solid #D6936D;
+//       text-decoration: underline;
+//     }
+  
+
+//   .contacts-time {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 12px;
+//     justify-content: left;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     border-top: 1px solid #e1e1e1;
+//     border-bottom: 1px solid #e1e1e1;
+
+//     .contacts-time__time {
+//       font-family: 'Montserrat';
+//       @include font(500, 16px, 30px);
+//       color: #ABABAB;
+//     }
+
+//     .contacts-time__day {
+//       font-family: 'Montserrat';
+//       @include font(500, 16px, 30px);
+//       color:$primary-text-color;
+//     }
+//   }
+//   .contacts-social {
+//     .contacts-social__link {
+//       @include font(500, 16px, 30px);
+//       color:#131313;
+//     }
+//   }
+// }
+
+// }
+
+// .button-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 16px;
+// }
+// .contacts-button {
+  
+
+//   .contacts-button__item {
+//     display: flex;
+//   }
+// }
