@@ -48,7 +48,8 @@
     }
 
     &:focus {
-      transform: scale(1.5);
+      fill: $secondary-text-color;
+      transform: scale(1.1);
     }
   }
 }
