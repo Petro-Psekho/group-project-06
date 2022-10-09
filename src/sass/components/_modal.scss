@@ -73,6 +73,12 @@
   }
 }
 .modal--buy-now {
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+    height: 95vh;
+    max-width: 280px;
+    max-height: 986px;
+  }
   @media screen and (min-width: $tablet) {
     min-height: 664px;
   }
