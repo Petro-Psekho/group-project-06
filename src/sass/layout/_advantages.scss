@@ -1,7 +1,5 @@
 .advantages {
   background: $bg-color;
-  padding-left: 45px;
-  padding-right: 45px;
   padding-top: 10px;
   padding-bottom: 60px;
   font-weight: 700;
@@ -74,6 +72,9 @@
   }
 }
 @media screen and (min-width: $tablet) {
+  .advantages {
+    padding-bottom: 204px;
+  }
   .advantages__list {
     gap: 80px;
   }
@@ -88,7 +89,11 @@
     margin-top: 16px;
   }
 }
-@media screen and (min-width: $desktop) {
+// @media screen and (min-width: $desktop)
+@include mq('desk') {
+  .advantages {
+    padding-bottom: 178px;
+  }
   .advantages__list {
     gap: 32px;
   }

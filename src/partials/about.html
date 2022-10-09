@@ -1,16 +1,44 @@
 <section class="about">
   <div class="container">
-    <p class="about__lable"> tradition and love</p>
-    <h2 class="about__title">how it’s made?</h2>
+    <p
+      class="about__lable animate__animated animate__pulse wow"
+      data-wow-delay="0.2s"
+    >
+      tradition and love
+    </p>
+    <h2
+      class="about__title animate__animated animate__pulse wow"
+      data-wow-delay="0.5s"
+    >
+      how it’s made?
+    </h2>
     <div class="about__block">
       <div class="about__images">
-        <picture class="about__card">
-          <source srcset="./images/about/desktop/cow-desktop@1x.png 1x, ./images/about/desktop/cow-desktop@2x.png 2x"
-            media="(min-width:1200px)">
-          <source srcset="./images/about/tablet/cow-tablet@1x.png 1x, ./images/about/tablet/cow-tablet@2x.png 2x"
-            media="(min-width:768px)">
-          <source srcset="./images/about/mobile/cow-mobile@1x.png 1x, ./images/about/mobile/cow-mobile@2x.png 2x"
-            media="(max-width:767px)">
+        <picture
+          class="about__card animate__animated animate__zoomIn wow"
+          data-wow-delay="0.5s"
+        >
+          <source
+            srcset="
+              ./images/about/desktop/cow-desktop@1x.png 1x,
+              ./images/about/desktop/cow-desktop@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/about/tablet/cow-tablet@1x.png 1x,
+              ./images/about/tablet/cow-tablet@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/about/mobile/cow-mobile@1x.png 1x,
+              ./images/about/mobile/cow-mobile@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
           <img src="./images/about/mobile/cow-mobile@1x.png" alt="Cow" />
         </picture>
       </div>
@@ -26,12 +54,14 @@
           milkshakes.</p>
         <p class="about__text-data">This is enough to choose ice cream and coffee for any mood!</p>
         <div class="about__button">
-          <button type="button" class="page__button-color about__btn data-modal-how-its-made-open">Read more
+          <button type="button" class="page__button-color about__btn data-modal-how-its-made-open animate__animated animate__tada wow" data-modal-how-its-made-open
+          data-wow-delay="0.8s">Read more
             <svg class="page__arrow-btn" width="12px" height="12px">
               <use href="./images/icons.svg#arrow-btn"></use>
             </svg>
           </button>
         </div>
+
       </div>
     </div>
   </div>
