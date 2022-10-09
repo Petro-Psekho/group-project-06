@@ -5,9 +5,9 @@ new Swiper('.swiper', {
     dynamicsBullets: true,
   },
   grabCursor: true,
-  mousewheel: {
-    sensitivity: 1,
-  },
+  // mousewheel: {
+  //   sensitivity: 1,
+  // },
   slidesPerView: 'auto',
   centeredSlides: true,
   spaceBetween: 300,
@@ -17,6 +17,10 @@ new Swiper('.swiper', {
   },
 
   speed: 800,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
   // loop: true,
   breakpoint: {
     320: {
