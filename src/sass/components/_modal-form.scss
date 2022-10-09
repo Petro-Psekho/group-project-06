@@ -37,6 +37,13 @@
     width: 368px;
     padding-left: 16px;
   }
+  &:not(:placeholder-shown):required:invalid {
+    background-color: rgba(250, 0, 0, 0.2);
+  }
+  // &:not(:placeholder-shown):required:invalid + .modal__button {
+  //   background-color: #ababab;
+  //   pointer-events: none;
+  // }
 }
 .modal-form__textarea {
   height: 84px;
