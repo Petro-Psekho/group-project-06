@@ -1,13 +1,13 @@
 .about {
   padding-top: 60px;
-  padding-bottom: 42px;
+  padding-bottom: 32px;
   background-color: $bg-color;
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 74px;
+    padding-bottom: 62px;
   }
   @media screen and (min-width: $desktop) {
-    padding-bottom: 89px;
+    padding-bottom: 79px;
   }
 
   &__lable {
@@ -182,31 +182,12 @@
     }
   }
   &__btn {
-    font-family: 'Montserrat', sans-serif;
-    @include font(600, 14, 18);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $primary-text-color;
-    width: 164px;
-    min-height: 42px;
-    background-color: $primary-yellow;
-    border-radius: 10px;
-    padding: 12px, 17px, 12px, 34px;
-    cursor: pointer;
-    &:hover {
-      background-color: #0a8817;
-    }
-    &:focus {
-      background-color: #0a8817;
-      color: $secondary-text-color;
-    }
     @media screen and (max-width: 767px) {
       margin: 0 auto;
+      margin-bottom: 32px;
     }
   }
-
-  &__btn-more {
-    margin-left: 9px;
-  }
+}
+.about__button {
+  text-align: center;
 }
