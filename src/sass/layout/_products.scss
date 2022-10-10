@@ -114,8 +114,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $primary-text-color;
-  padding-top: 123px;
   margin-bottom: 40px;
+  padding-top: 123px;
 }
 
 .products__text {
@@ -126,6 +126,26 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $primary-text-color;
+  margin-bottom: 29px;
+}
+
+.products__modal-open-btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
+  display: flex;
+  border: none;
+  font-family: inherit
+
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -192,6 +212,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   }
 
   .products__item {
+    display:inline-block;
     width: 224px;
     height: 428px;
     flex-basis: calc((100% - 32px)/3);
@@ -246,22 +267,10 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/product/desctop/ice-3-desctop.png);
   }
 
-  .products__item-olive {
+  .products__item {
     width: 370px;
     height: 535px;
-
-  }
-
-  .products__item-yellow {
-    width: 370px;
-    height: 535px;
-
-  }
-
-  .products__item-brown {
-    width: 370px;
-    height: 535px;
-
+    flex-basis: calc((100% - 64px)/3);
   }
 
   .products__over-title {
@@ -272,18 +281,22 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .products__title {
     font-size: 36px;
     line-height: 1.25;
+    margin-bottom: 303px;
   }
 
   .products__subtitle {
     font-size: 30px;
     line-height: 1.23;
     padding-top: 166px;
+    
   }
 
   .products__text {
     font-size: 16px;
     line-height: 1.75;
+    min-height: 175px;
   }
+  
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
