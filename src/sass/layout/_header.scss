@@ -1,0 +1,91 @@
+.hero {
+  background-color: #84a278;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 61px;
+  }
+}
+.burger-button {
+  display: block;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  fill: $bc-white;
+  background-color: transparent;
+  transition: fill 250ms ease-out;
+  &:hover,
+  &:focus {
+    fill: $primary-yellow;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 32px;
+    margin-left: auto;
+    padding-top: 29px;
+    padding-bottom: 43px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.header__logo-link {
+  @include flexCenter();
+}
+.header__logo {
+  display: block;
+  @media screen and (min-width: $tablet) {
+    width: 48px;
+    height: 44px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 60px;
+    height: 65px;
+  }
+}
+.navigation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 269px;
+    margin-right: auto;
+  }
+}
+.navigation__list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 27px;
+  }
+}
+.navigation__link {
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 58px;
+    text-align: center;
+    @include font(700, 16px, 20px);
+    color: $secondary-text-color;
+    &:hover,
+    &:focus {
+      color: $primary-yellow;
+    }
+  }
+}
+.header__button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    gap: 8px;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: 152px;
+  }
+}
