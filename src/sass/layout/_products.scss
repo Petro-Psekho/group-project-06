@@ -210,15 +210,19 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   font-size: 14px;
   line-height: 1.78;
   }
-
-  .products__item {
-    display:inline-block;
-    width: 224px;
-    height: 428px;
-    flex-basis: calc((100% - 32px)/3);
+  .products__menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   }
-
-
+  .products__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-basis: calc((100% - 32px)/3);
+  height:428px;
+}
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -268,8 +272,8 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
   }
 
   .products__item {
-    width: 370px;
     height: 535px;
+    gap: 32px;
     flex-basis: calc((100% - 64px)/3);
   }
 
