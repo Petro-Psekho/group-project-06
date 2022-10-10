@@ -1,5 +1,5 @@
 .menu {
-  position: absolute;
+  position: fixed;
   background-color: $menu-bcg-color;
   opacity: 0;
   visibility: hidden;
@@ -8,13 +8,13 @@
   transition: opacity 250ms ease-out, visibility 250ms ease-out,
     transform 250ms ease-out;
   @media screen and (max-width: 479px) {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     transform: translateX(-100%);
   }
   @media screen and (min-width: $mobile) and (max-width: 767px) {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     transform: translateX(-100%);
@@ -42,7 +42,7 @@
     height: 100vh;
   }
   @media screen and (min-width: $mobile) and (max-width: 767px) {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
@@ -51,7 +51,7 @@
     height: 100%;
   }
   @media screen and (min-width: $tablet) {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 0%;
     z-index: 99;
@@ -118,6 +118,9 @@
     right: 32px;
   }
 }
+.menu__logo-link {
+  @include flexCenter();
+}
 .menu__logo {
   position: absolute;
   top: 12px;
@@ -126,6 +129,8 @@
   @media screen and (min-width: $tablet) {
     top: 20px;
     right: 32px;
+    width: 48px;
+    height: 44px;
   }
 }
 .menu__button-buy-now {
