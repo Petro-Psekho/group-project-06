@@ -22,3 +22,7 @@ $button-hover-focus-color: #0a8817;
 $bg-color-gray: #f5f5f5;
 $button-text: #000000;
 $menu-bcg-color: #85a279;
+//animation button arrow//
+$mainTransitionDuration: 250ms;
+$mainTransitionTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+$timinganima: $mainTransitionDuration $mainTransitionTimingFunction;
