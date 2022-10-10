@@ -253,8 +253,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   width: calc(33.3333% - 10.6667px);
     padding: 108px 26px 12px;
   }
-
-
+  .products__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-basis: calc((100% - 32px)/3);
+  height:428px;
+}
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -306,10 +311,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
   }
 
   .products__item {
+
   width: calc(33.3333% - 21.3333px);
     height: 536px;
     padding: 166px 64px 0;
-    
+
   }
 
   .products__over-title {
