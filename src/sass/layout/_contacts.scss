@@ -96,33 +96,36 @@
           }
         }
       }
-            .contacts-button {
-              display: flex;
-              flex-direction: column;
-              gap: 16px;
-
-              margin-top: 0;
-            }
+            
     }
+        .contacts-button {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+    
+          margin-top: 0;
+        }
 }
 
 @media screen and (min-width: $tablet) {
   .contacts {
+    position: relative;
+    height: 362px;
   
       background-color: $bg-color;
       
     .contacts-container {
-      position: relative;
+      position: absolute;
       height: 362px;
-      
+      display: flex;
+          
     }
   
     .contacts-list {
-      position: absolute;
-        
+              
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: 16px;
   
       transform: translateY(-300px);
@@ -210,15 +213,18 @@
       }
     }
   
+    
+  }
     .contacts-button {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 16px;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 296px;
+  
+  
+  
     }
-  }
 }
 
 @media screen and (min-width: $desktop) {
