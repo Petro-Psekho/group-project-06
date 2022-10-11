@@ -1,6 +1,6 @@
 .page__button {
   font-family: 'Montserrat', sans-serif;
-  @include font(600, 14, 18);
+  @include font(600, 8, 10);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@
     color: $secondary-text-color;
   }
   @media screen and (min-width: $desktop) {
-    @include font(600, 8, 10);
+    @include font(600, 14, 18);
     width: 134px;
     min-height: 42px;
     border-radius: 10px;
