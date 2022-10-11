@@ -3,23 +3,22 @@
       background-color: $bg-color;
         
     .contacts-container {
-            
+             
     }  
     .contacts-list {
       display: block;
-                   
       transform: translateY(-345px);
-  
+        
       .contacts-list__item {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 24px;
         min-width: 280px;
-        padding: 32px;
+        padding: 40px 32px;
         margin-bottom: 20px;
 
-        background: #FFFFFF;
+        background: $bc-white;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
   
@@ -36,8 +35,8 @@
           @include font(500, 12px, 22px);
           text-align: center;
           letter-spacing: 0.04em;
-          color: #131313;
-          background: #F8D24E;
+          color: $primary-text-color;
+          background: $primary-yellow;
           border-radius: 4px;
         }
   
@@ -93,43 +92,65 @@
         .contacts-social {
           .contacts-social__link {
             @include font(500, 12px, 22px);
-            color: #131313;
+            color: $primary-text-color;
           }
         }
       }
-            
-    }
+     
         .contacts-button {
           display: flex;
+          align-items: center;
+          justify-content: center;
           flex-direction: column;
           gap: 16px;
-    
+              
           margin-top: 0;
+          transform: translateY(-39px)
         }
+        .contacts-button__loc {
+          width: 196px;
+          
+          &:hover,
+          &:focus {
+            background-color: $button-hover-focus-color;
+            color:$secondary-text-color;
+          }
+
+        }
+        .contacts-button__fran {
+          width: 196px;
+          background-color: transparent;
+          border: 2px Solid #F8D24E;
+          
+          &:hover,
+          &:focus {
+              border: 2px solid $button-hover-focus-color;
+              color: $secondary-text-color;
+          }
+       }
+    }
+        
 }
 
 @media screen and (min-width: $tablet) {
   .contacts {
-    position: relative;
-    height: 362px;
-  
-      background-color: $bg-color;
+    background-color: $bg-color;
       
     .contacts-container {
-      position: absolute;
-      // height: 362px;
+      position: relative;
       display: flex;
-          
+      height: 362px;
+      flex-direction: column;
     }
   
     .contacts-list {
-              
+      position: absolute; 
+      bottom: 142px;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 16px;
-  
-      transform: translateY(-300px);
+           
   
       .contacts-list__item {
         
@@ -138,7 +159,7 @@
         gap: 32px;
   
         padding: 40px 24px;
-        background: #FFFFFF;
+        background: $bc-white;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
   
@@ -153,8 +174,8 @@
   
         text-align: center;
         letter-spacing: 0.04em;
-        color: #131313;
-        background: #F8D24E;
+        color: $primary-text-color;
+        background: $primary-yellow;
         border-radius: 6px;
       }
       .contacts-list__kategory_size {
@@ -180,7 +201,7 @@
       .contacts-adress__link {
           font-family: 'Montserrat';
           @include font(500, 14px, 26px);
-          color: Solid #D6936D;
+          color: #D6936D;
           text-decoration: underline;
         }
   
@@ -210,25 +231,52 @@
         .contacts-social__link {
           @include font(500, 14px, 26px);
           color:#131313;
+
+          .contacts-social__link:hover {
+            color: #D6936D;
+          }
         }
+
+      }
+    }  
+    
+        .contacts-button_container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        .contacts-button {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          bottom: 40px;
+        }
+                .contacts-button__loc {
+                  width: 196px;
+        
+                  &:hover,
+                  &:focus {
+                    background-color: $button-hover-focus-color;
+                    color: $secondary-text-color;
+                  }
+        
+                }
+        
+                .contacts-button__fran {
+                  width: 196px;
+                  background-color: transparent;
+                  border: 2px Solid #F8D24E;
+        
+                  &:hover,
+                  &:focus {
+                    border: 2px solid $button-hover-focus-color;
+                    color: $secondary-text-color;
+                  }
+                }
       }
     }
-  
-    
-  }
-    .contacts-button_container {
-      position: absolute;
-      bottom: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      transform: translate(-300px);
-  
-  
-  
-    }
-}
 
 @media screen and (min-width: $desktop) {
   .contacts {
@@ -237,16 +285,18 @@
   .contacts-container {
     position: relative;
     height: 668px;
+    display: flex;
+    flex-direction: column;
    
   }
 
   .contacts-list {
     position: absolute;
     width: 1168px;
-    
     gap: 32px;
+    bottom: 226px;
 
-    transform: translateY(-120px);
+    
 
     .contacts-list__item {
       gap: 32px;
@@ -295,6 +345,18 @@
         @include font(500, 16px, 30px);
       }
     }
+  }
+  .contacts-button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    bottom: 120px;
   }
   }
 }
