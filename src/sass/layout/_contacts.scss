@@ -3,23 +3,20 @@
       background-color: $bg-color;
         
     .contacts-container {
-      position: relative;
+            
     }  
     .contacts-list {
-      // width: 280px;
-      // height: 412px;
       display: block;
-
-      position: absolute;
-          
-        // transform: translateY(-120px);
+                   
+      transform: translateY(-345px);
   
       .contacts-list__item {
         display: flex;
         flex-direction: column;
         gap: 24px;
-        
+        min-width: 280px;
         padding: 32px;
+        margin-bottom: 20px;
 
         background: #FFFFFF;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -99,33 +96,30 @@
           }
         }
       }
-    }
-  
-    .button-container {}
-  
-    .contacts-button {}
+            .contacts-button {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
 
+              margin-top: 0;
+            }
+    }
 }
 
 @media screen and (min-width: $tablet) {
   .contacts {
   
       background-color: $bg-color;
-      &__title {
-      }
-  
+      
     .contacts-container {
       position: relative;
       height: 362px;
+      
     }
   
     .contacts-list {
       position: absolute;
-      width: 704px;
-      // height: 528px;
-  
-      // top: 120px;
-  
+        
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -186,7 +180,6 @@
           text-decoration: underline;
         }
   
-  
       .contacts-time {
         display: flex;
         flex-direction: column;
@@ -216,21 +209,32 @@
         }
       }
     }
+  
+    .contacts-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
   }
 }
 
 @media screen and (min-width: $desktop) {
   .contacts {
+    
 
   .contacts-container {
     position: relative;
     height: 668px;
+   
   }
 
   .contacts-list {
     position: absolute;
     width: 1168px;
-    // top: 120px;
+    
     gap: 32px;
 
     transform: translateY(-120px);
@@ -277,13 +281,13 @@
       }
     }
     .contacts-social {
-
+      
       .contacts-social__link {
         @include font(500, 16px, 30px);
       }
     }
   }
- }
+  }
 }
 
 
