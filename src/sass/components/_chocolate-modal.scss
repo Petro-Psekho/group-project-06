@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex-basis: calc((100% - 21px) / 4);
   gap: 8px;
   width: 53px;
   height: 72px;
