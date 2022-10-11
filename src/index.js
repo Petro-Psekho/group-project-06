@@ -8,3 +8,4 @@ import './js/slider-reviews';
 
 import './js/modal-buynow';
 import './js/mobile-menu';
+import './js/anchor-scroll';
