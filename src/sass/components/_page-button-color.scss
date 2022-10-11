@@ -19,6 +19,7 @@
   &:focus {
     background-color: $button-hover-focus-color;
     color: $secondary-text-color;
+    fill: $secondary-text-color;
   }
 }
 
