@@ -1,7 +1,7 @@
 .button-up {
   @include flexCenter;
   position: fixed;
-  @media screen and (man-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 30px;
     height: 30px;
     right: 20px;
