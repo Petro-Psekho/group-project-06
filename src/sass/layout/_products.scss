@@ -76,6 +76,11 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     font-weight: 700;
     line-height: 1.23;
     margin-bottom: 40px;
+    letter-spacing: .04em;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
   }
 
   &__wrapper {
@@ -292,7 +297,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   &__circle--brown{
     box-shadow: 0 5px 20px rgb(32 31 31 / 25%);
   }
-  
+  &__subtitle{
+    letter-spacing: .04em;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
+      font-size: 22px;
+  }
   &__text{
     font-weight: 400;
     font-size: 14px;
