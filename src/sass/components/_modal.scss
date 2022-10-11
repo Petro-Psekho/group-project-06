@@ -2,7 +2,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 999;
+  z-index: 1000;
   width: 100wv;
   height: 95vhs;
   transform: translate(-50%, -50%) scale(1);
@@ -40,6 +40,7 @@
     height: 95vh;
     max-width: 280px;
     max-height: 990px;
+    overflow-y: scroll;
   }
   @media screen and (min-width: $tablet) {
     padding-left: 40px;
@@ -77,6 +78,7 @@
     height: 95vh;
     max-width: 280px;
     max-height: 986px;
+    z-index: 1000;
   }
   @media screen and (min-width: $tablet) {
     min-height: 664px;

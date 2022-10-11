@@ -1,0 +1,45 @@
+.button-up {
+  @include flexCenter;
+  position: fixed;
+  @media screen and (man-width: 767px) {
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    bottom: 20px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+.button-up__icon {
+  fill: $primary-yellow;
+  opacity: 0.5;
+  transition: opacity 250ms linear, transform 250ms linear;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    fill: $button-hover-focus-color;
+  }
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 30px;
+    height: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}
