@@ -5,7 +5,6 @@
 @import './base/common';
 @import './base/container';
 
-@import './layout/hero-header';
 @import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
@@ -13,6 +12,8 @@
 @import './layout/customer-reviews';
 @import './layout/contacts';
 @import './layout/footer';
+@import './layout/header';
+@import './layout/hero';
 
 @import './components/backdrop';
 @import './components/modal-how-its-made';
@@ -27,5 +28,3 @@
 @import './components/page-button-color';
 @import './components/_page-button';
 @import './components/mobile-menu';
-
-@import './layout/header';
