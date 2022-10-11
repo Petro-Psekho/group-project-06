@@ -2,25 +2,13 @@
     <div class="header__wrapper container">
         <a href="#home" class="header__logo-link">
             <picture>
-                <source
-                    srcset="./images/hero-header/mobile/logo-1x.png x1"
-                    ,
-                    srcset="./images/hero-header/mobile/logo-2x.png x2"
-                    media="(max-width:767px)"
-                />
-                <source
-                    srcset="./images/hero-header/tablet/logo-tablet-1x.png x1"
-                    ,
-                    srcset="./images/hero-header/tablet/logo-tablet-2x.png x2"
-                    media="(min-width:768px)"
-                />
-                <source
-                    srcset="./images/hero-header/desktop/logo-desktop-1x.png x1"
-                    ,
-                    srcset="./images/hero-header/desktop/logo-desktop-1x.png x2"
-                    media="(min-width:1200px)"
-                />
-                <img class="header__logo"src="./images/hero-header/mobile/logo-1x.png" alt="logo" />
+                <source srcset="./images/hero-header/mobile/logo-1x.png x1" ,
+                    srcset="./images/hero-header/mobile/logo-2x.png x2" media="(max-width:767px)" />
+                <source srcset="./images/hero-header/tablet/logo-tablet-1x.png x1" ,
+                    srcset="./images/hero-header/tablet/logo-tablet-2x.png x2" media="(min-width:768px)" />
+                <source srcset="./images/hero-header/desktop/logo-desktop-1x.png x1" ,
+                    srcset="./images/hero-header/desktop/logo-desktop-1x.png x2" media="(min-width:1200px)" />
+                <img class="header__logo" src="./images/hero-header/mobile/logo-1x.png" alt="logo" />
             </picture>
         </a>
         <nav class="navigation">
@@ -31,70 +19,56 @@
                 <li class="navigation__item"><a href="#contacts" class="navigation__link">Contact</a></li>
             </ul>
         </nav>
-        <button type="button" class="burger-button js-open-menu" aria-expanded="false"
-          aria-controls="mobile-menu">
+        <button type="button" class="burger-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="20 " height="12">
                 <use href="./images/icons.svg#icon-menu-open"></use>
             </svg>
         </button>
-        <button type="button" class="page__button-color header__button" data-modal-open-buy-now >Buy now
+        <button type="button" class="page__button-color header__button" data-modal-open-buy-now>Buy now
             <svg class="page__ arrow-btn" width="12px" height="12px">
-                <use href="./images/icons.svg#arrow-btn"></use></svg> </button>
-        </button>        
-            <div id="mobile-menu" class="menu js-menu-container">
-                <div class="menu__wrapper">
-                    <a href="#home" class="menu__logo-link">
+                <use href="./images/icons.svg#arrow-btn"></use>
+            </svg> </button>
+        </button>
+        <div id="mobile-menu" class="menu js-menu-container">
+            <div class="menu__wrapper">
+                <a href="#home" class="menu__logo-link">
                     <picture>
-                        <source
-                            srcset="./images/hero-header/mobile/logo-1x.png x1"
-                            ,
-                            srcset="./images/hero-header/mobile/logo-2x.png x2"
-                            media="(max-width:767px)"
-                        />
-                        <source
-                            srcset="./images/hero-header/tablet/logo-tablet-1x.png x1"
-                            ,
-                            srcset="./images/hero-header/tablet/logo-tablet-2x.png x2"
-                            media="(min-width:768px)"
-                        />
-                        <source
-                            srcset="./images/hero-header/desktop/logo-desktop-1x.png x1"
-                            ,
-                            srcset="./images/hero-header/desktop/logo-desktop-1x.png x2"
-                            media="(min-width:1200px)"
-                        />
-                        <img src="./images/hero-header/mobile/logo-1x.png" alt="logo" class="menu__logo"/>
+                        <source srcset="./images/hero-header/mobile/logo-1x.png x1" ,
+                            srcset="./images/hero-header/mobile/logo-2x.png x2" media="(max-width:767px)" />
+                        <source srcset="./images/hero-header/tablet/logo-tablet-1x.png x1" ,
+                            srcset="./images/hero-header/tablet/logo-tablet-2x.png x2" media="(min-width:768px)" />
+                        <source srcset="./images/hero-header/desktop/logo-desktop-1x.png x1" ,
+                            srcset="./images/hero-header/desktop/logo-desktop-1x.png x2" media="(min-width:1200px)" />
+                        <img src="./images/hero-header/mobile/logo-1x.png" alt="logo" class="menu__logo" />
                     </picture>
-                    </a>
-                    <button
-                        type="button"
-                        class="menu__button--close js-close-menu"
-                        aria-expanded="false"
-                        aria-controls="mobile-menu"
-                        >
-                        <svg width="32" height="32">
-                            <use href="./images/icons.svg#cross-close"></use>
-                        </svg>
-                    </button>
-                    <ul class="menu__navigation">
-                        <li class="menu-navigation__link">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="menu-navigation__link">
-                            <a href="#how-its-made">How it’s made?</a>
-                        </li>
-                        <li class="menu-navigation__link">
-                            <a href="#our-products">Our products</a>
-                        </li>
-                        <li class="menu-navigation__link">
-                            <a href="#contacts">Contact</a>
-                        </li>
-                    </ul>
-                    <button type="button" class="page__button-color menu__button-buy-now" data-modal-open-buy-now >Buy now
-                        <svg class="page__ arrow-btn" width="12px" height="12px">
-                            <use href="./images/icons.svg#arrow-btn"></use></svg> </button>
-                    </button>
-                </div>            
+                </a>
+                <button type="button" class="menu__button--close js-close-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg width="32" height="32">
+                        <use href="./images/icons.svg#cross-close"></use>
+                    </svg>
+                </button>
+                <ul class="menu__navigation">
+                    <li class="menu-navigation__link">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="menu-navigation__link">
+                        <a href="#how-its-made">How it’s made?</a>
+                    </li>
+                    <li class="menu-navigation__link">
+                        <a href="#our-products">Our products</a>
+                    </li>
+                    <li class="menu-navigation__link">
+                        <a href="#contacts">Contact</a>
+                    </li>
+                </ul>
+                <button type="button" class="page__button-color menu__button-buy-now" data-menu-modal-open-buy-now>Buy
+                    now
+                    <svg class="page__ arrow-btn" width="12px" height="12px">
+                        <use href="./images/icons.svg#arrow-btn"></use>
+                    </svg> </button>
+                </button>
+            </div>
         </div>
     </div>
 </header>
