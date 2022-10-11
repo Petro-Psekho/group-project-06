@@ -77,6 +77,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     line-height: 1.23;
     margin-bottom: 40px;
     letter-spacing: .04em;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
       font-size: 20px;
   }
 
@@ -296,6 +299,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   }
   &__subtitle{
     letter-spacing: .04em;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
       font-size: 22px;
   }
   &__text{
