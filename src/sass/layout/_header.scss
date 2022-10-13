@@ -97,6 +97,9 @@
   }
   @media screen and (min-width: $desktop) {
     display: block;
+
+    padding-top: 49px;
+    padding-bottom: 49px;
     text-align: center;
     @include font(700, 16px, 20px);
     color: $secondary-text-color;
