@@ -175,9 +175,7 @@
     display: block;
     position: absolute;
     z-index: 2;
-    opacity: 0;
-    transform: translate(550px, 0px) scale(1);
-    animation: hero__images 1.5s forwards;
+
     @media screen and (max-width: 767px) {
       top: 162px;
       left: 50%;
@@ -186,6 +184,12 @@
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
       top: -41;
       left: 362px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      opacity: 0;
+      transform: translate(550px, 0px) scale(1);
+      animation: hero__images 1.5s forwards;
     }
 
     @media screen and (min-width: $desktop) {
@@ -210,9 +214,11 @@
   &__images-back {
     z-index: 1;
     position: absolute;
-    opacity: 0;
-    transform: translate(0px, 300px) scale(1);
-    animation: hero__images-back 1.5s forwards;
+    @media screen and (min-width: $tablet) {
+      opacity: 0;
+      transform: translate(0px, 300px) scale(1);
+      animation: hero__images-back 1.5s forwards;
+    }
 
     @media screen and (max-width: 767px) {
       top: 385px;
@@ -237,7 +243,7 @@
     }
 
     100% {
-      transform: translate(0) rotate(0) scale(1);
+      transform: scale(1);
       opacity: 1;
     }
   }
