@@ -2,6 +2,7 @@
   background-color: $bg-color;
   width: 100%;
   height: 100%;
+  padding-top: 110px;
   @media screen and (max-width: $tablet) {
     position: relative;
   }
@@ -68,7 +69,8 @@
     }
   }
   &__text-box-item-icon {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       transform: scale(1.2) translateX(20px);
@@ -80,7 +82,7 @@
   }
 
   &__title {
-    font-family: "Seymour One", sans-serif;
+    font-family: 'Seymour One', sans-serif;
     @include font(400, 26, 33);
     letter-spacing: 0.04em;
     color: $secondary-text-color;
@@ -107,7 +109,7 @@
   }
 
   &__span {
-    font-family: "Seymour One", sans-serif;
+    font-family: 'Seymour One', sans-serif;
     @include font(400, 34, 32);
     color: $secondary-text-color;
     text-transform: uppercase;
@@ -124,7 +126,7 @@
     flex-direction: column;
   }
   &__btn {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     @include font(600, 8, 10);
     display: flex;
     align-items: center;
@@ -192,7 +194,7 @@
       display: none;
     }
     @media screen and (min-width: $tablet) {
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       @include font(900, 28, 34);
       text-align: right;
       letter-spacing: 0.04em;
@@ -209,7 +211,7 @@
       display: none;
     }
     @media screen and (min-width: $tablet) {
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       @include font(400, 8, 10);
       text-align: right;
       color: $secondary-text-color;
@@ -287,7 +289,7 @@
       display: none;
     }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       @include font(400, 12, 17);
       color: $secondary-text-color;
       width: 151px;

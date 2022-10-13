@@ -1,9 +1,16 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
-  background-color: $bg-color;
+  // background-color: $bg-color;
+  width: 100%;
 }
+
+.bg {
+  background-color: $bg-color;
+  width: 100%;
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
