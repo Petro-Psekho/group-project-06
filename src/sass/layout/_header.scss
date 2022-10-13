@@ -75,8 +75,8 @@
 .navigation__link {
   @media screen and (min-width: $desktop) {
     display: block;
-    padding-top: 40px;
-    padding-bottom: 58px;
+    padding-top: 49px;
+    padding-bottom: 49px;
     text-align: center;
     @include font(700, 16px, 20px);
     color: $secondary-text-color;
