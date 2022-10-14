@@ -68,6 +68,9 @@
 .customer-reviews__img {
   max-width: 85px;
   border-radius: 50%;
+
+  &:hover .customer-reviews__item {
+  }
 }
 
 .swiper .customer-reviews__text {
@@ -75,6 +78,13 @@
   color: $secondary-text-color;
   background-color: $bg-color;
   border-radius: 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 11px 21px 93px -62px $button-text;
+  }
+
   @media screen and (max-width: $tablet) {
     @include font(400, 12, 31);
     max-width: 280px;

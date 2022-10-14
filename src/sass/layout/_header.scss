@@ -20,6 +20,10 @@
     padding-top: 12px;
     padding-bottom: 12px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-top: 28px;
+    padding-bottom: 10px;
+  }
 }
 .burger-button {
   display: block;
@@ -37,7 +41,7 @@
     margin-right: 32px;
     margin-left: auto;
     padding-top: 29px;
-    padding-bottom: 43px;
+    padding-bottom: 40px;
   }
   @media screen and (min-width: $desktop) {
     display: none;
@@ -45,6 +49,16 @@
 }
 .header__logo-link {
   @include flexCenter();
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 11px 21px 93px -62px $button-text;
+  }
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 11px 21px 93px -62px $button-text;
+  }
 }
 .header__logo {
   display: block;
@@ -62,8 +76,6 @@
     display: none;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 269px;
-    margin-right: auto;
   }
 }
 .navigation__list {
@@ -73,8 +85,19 @@
   }
 }
 .navigation__link {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 11px 21px 93px -62px $button-text;
+  }
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 11px 21px 93px -62px $button-text;
+  }
   @media screen and (min-width: $desktop) {
     display: block;
+
     padding-top: 49px;
     padding-bottom: 49px;
     text-align: center;

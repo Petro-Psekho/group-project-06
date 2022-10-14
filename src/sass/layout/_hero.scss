@@ -61,15 +61,32 @@
   &__text-box-item {
     display: flex;
     flex-direction: column;
+    &__images-left {
+      animation-delay: 0.05s;
+    }
   }
 
   &__images-left {
+    opacity: 0;
+    transform: translate(-150px, -50px) rotate(-180deg) scale(3);
+    animation: hero__images-left 1.5s forwards;
     @media screen and (max-width: 767px) {
       display: none;
     }
     @media screen and (min-width: $tablet) {
     }
   }
+  @keyframes hero__images-left {
+    60% {
+      transform: translate(20px, 20px) rotate(30deg) scale(0.3);
+    }
+
+    100% {
+      transform: translate(0) rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
+
   &__text-box-item-icon {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -137,13 +154,18 @@
     background-color: transparent;
     color: $primary-yellow;
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: 8px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
+      transform: scale(1.1);
+      box-shadow: 11px 21px 93px -62px $button-text;
       color: $button-hover-focus-color;
     }
     &:focus {
+      transform: scale(1.1);
+      box-shadow: 11px 21px 93px -62px $button-text;
       color: $secondary-text-color;
     }
     @media screen and (min-width: $desktop) {
@@ -157,6 +179,9 @@
     display: block;
     position: absolute;
     z-index: 2;
+    opacity: 0;
+    transform: translate(550px, 0px) scale(1);
+    animation: hero__images 1.5s forwards;
     @media screen and (max-width: 767px) {
       top: 230px;
       left: 52%;
@@ -172,10 +197,26 @@
       left: 567px;
     }
   }
+  @keyframes hero__images {
+    30% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: translate(0) rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
 
   &__images-back {
     z-index: 1;
     position: absolute;
+    opacity: 0;
+    transform: translate(0px, 300px) scale(1);
+    animation: hero__images-back 1.5s forwards;
 
     @media screen and (max-width: 767px) {
       top: 452px;
@@ -189,6 +230,19 @@
     @media screen and (min-width: $desktop) {
       top: 202px;
       left: 0;
+    }
+  }
+  @keyframes hero__images-back {
+    30% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(0) rotate(0) scale(1);
+      opacity: 1;
     }
   }
   &__numbers {
